@@ -1,0 +1,86 @@
+.show-btn {
+    display: grid;
+   
+    background-color: rgb(50, 228, 223);
+  }
+  
+ 
+  
+  .equal {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  
+  .btn:last-child {
+    font-weight: medium;
+    font-size: 40px;
+    width: 110px;
+    height: 50px;
+    /* border-radius: 10px;
+     color: white; */
+    background-color: #1017e9;
+  }
+  .btn img{
+    width: auto;
+    height: 55px;
+  }
+  
+  .clr {
+    color: #9a9091;
+  }
+  
+  .exp {
+    background-color: hsla(20, 7%, 9%, 0.224) !important;
+    color: #000;
+    font-size: 2.5rem !important;
+  }
+  
+  .exp:hover{
+   
+    opacity: 0.7;
+  }
+  
+  
+  .btn {
+    width: 60px;
+    height: 60px;
+    margin: 6px auto;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    border: 0px;
+    user-select: none;
+  }
+  
+  @media (min-width: 800px) {
+    .btn:hover {
+      background-color: #6dd5ed;
+      color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 50%;
+    }
+  
+    .btn:active,
+    .btn.touched {
+      background-color: #48b1bf;
+      color: white;
+      transition: background-color 0.3s ease;
+      border-radius: 50%;
+    }
+  
+    .btn:active {
+      transform: scale(0.9);
+    }
+  
+    .btn.touched {
+      pointer-events: none;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .btn:active {
+      transform: scale(0.9);
+    }
+  }
